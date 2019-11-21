@@ -21,8 +21,5 @@ public class BrowserFactory
         return null;
     }
 
-    public static void main(String[] args)
-    {
 
-    }
 }
