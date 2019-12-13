@@ -35,7 +35,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
 		<span class='report-name'>Vytrack Test Results</span>
@@ -44,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 10, 2019 02:36:54 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 13, 2019 02:25:46 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -60,6 +61,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -102,10 +104,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -123,17 +125,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to Dashboard</span>
-						<span class='test-time'>Dec 10, 2019 02:36:56 PM</span>
+						<span class='test-time'>Dec 13, 2019 02:25:48 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:36:56 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:37:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+696ms</span>
+	<span class='label start-time'>Dec 13, 2019 02:25:48 PM</span>
+	<span class='label end-time'>Dec 13, 2019 02:25:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+355ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -147,9 +149,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:37:02 PM</td>
+				<td class='timestamp'>2:25:56 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle Dashboard is displayed
+						Verified that page subtitle 'Dashboard' is displayed
 					
 				</td>
 			</tr>
@@ -158,17 +160,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Manage Dashboards</span>
-						<span class='test-time'>Dec 10, 2019 02:37:05 PM</span>
+						<span class='test-time'>Dec 13, 2019 02:25:58 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:37:05 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:37:12 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+367ms</span>
+	<span class='label start-time'>Dec 13, 2019 02:25:58 PM</span>
+	<span class='label end-time'>Dec 13, 2019 02:26:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+776ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -182,9 +184,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:37:12 PM</td>
+				<td class='timestamp'>2:26:03 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle All Manage Dashboards is displayed
+						Verified that page subtitle 'All Manage Dashboards' is displayed
 					
 				</td>
 			</tr>
@@ -193,17 +195,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Cars</span>
-						<span class='test-time'>Dec 10, 2019 02:37:14 PM</span>
+						<span class='test-time'>Dec 13, 2019 02:26:05 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:37:14 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:37:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+605ms</span>
+	<span class='label start-time'>Dec 13, 2019 02:26:05 PM</span>
+	<span class='label end-time'>Dec 13, 2019 02:26:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+454ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -217,9 +219,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:37:21 PM</td>
+				<td class='timestamp'>2:26:11 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle All Cars is displayed
+						Verified that page subtitle 'All Cars' is displayed
 					
 				</td>
 			</tr>
@@ -228,17 +230,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Accounts</span>
-						<span class='test-time'>Dec 10, 2019 02:37:23 PM</span>
+						<span class='test-time'>Dec 13, 2019 02:26:13 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:37:23 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:37:30 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+763ms</span>
+	<span class='label start-time'>Dec 13, 2019 02:26:13 PM</span>
+	<span class='label end-time'>Dec 13, 2019 02:26:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+252ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -252,9 +254,161 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:37:30 PM</td>
+				<td class='timestamp'>2:26:18 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle All Accounts is displayed
+						Verified that page subtitle 'All Accounts' is displayed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify that page subtitle is equals to All Calls</span>
+						<span class='test-time'>Dec 13, 2019 02:26:20 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 13, 2019 02:26:20 PM</span>
+	<span class='label end-time'>Dec 13, 2019 02:26:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+206ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>2:26:34 PM</td>
+				<td class='step-details'>
+						smokeTest
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>2:26:34 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.cssSelector: h1[class='oro-subtitle'] to have text "All Calls". Current text: "Dashboard" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mr-Skylines-MacBook-Pro.local', ip: 'fe80:0:0:0:141d:39dc:5aa9:e7c0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h7/mjt1_lcj2fz...}, goog:chromeOptions: {debuggerAddress: localhost:50602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 87f466096259f29044305d961c6f9072
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.BasePage.waitForPageSubTitle(BasePage.java:136)
+	at test.vytrack.SmokeTest.smokeTest(SmokeTest.java:28)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</textarea>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/TK/IdeaProjects/Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest 2019-12-13 14:26.png' src='/Users/TK/IdeaProjects/Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest 2019-12-13 14:26.png' data-src='/Users/TK/IdeaProjects/Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest 2019-12-13 14:26.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify that page subtitle is equals to All Calendar Events</span>
+						<span class='test-time'>Dec 13, 2019 02:26:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 13, 2019 02:26:36 PM</span>
+	<span class='label end-time'>Dec 13, 2019 02:26:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+63ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:26:41 PM</td>
+				<td class='step-details'>
+						Verified that page subtitle 'All Calendar Events' is displayed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify that page subtitle is equals to Open Opportunities</span>
+						<span class='test-time'>Dec 13, 2019 02:26:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 13, 2019 02:26:43 PM</span>
+	<span class='label end-time'>Dec 13, 2019 02:26:49 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+955ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:26:49 PM</td>
+				<td class='step-details'>
+						Verified that page subtitle 'Open Opportunities' is displayed
 					
 				</td>
 			</tr>
@@ -283,7 +437,98 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 13, 2019 02:26:20 PM</td>
+										<td class='linked' test-id='19'>Verify that page subtitle is equals to All Calls</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.cssSelector: h1[class='oro-subtitle'] to have text "All Calls". Current text: "Dashboard" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mr-Skylines-MacBook-Pro.local', ip: 'fe80:0:0:0:141d:39dc:5aa9:e7c0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h7/mjt1_lcj2fz...}, goog:chromeOptions: {debuggerAddress: localhost:50602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 87f466096259f29044305d961c6f9072
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.BasePage.waitForPageSubTitle(BasePage.java:136)
+	at test.vytrack.SmokeTest.smokeTest(SmokeTest.java:28)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -291,7 +536,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -303,19 +548,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 10, 2019 02:36:54 PM</div>
+					<div class='panel-lead'>Dec 13, 2019 02:25:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 10, 2019 02:37:30 PM</div>
+			 		<div class='panel-lead'>Dec 13, 2019 02:26:49 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 36s+395ms</div>
+					<div class='panel-lead'>0h 1m 3s+741ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -350,14 +595,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 4,
-				passParent: 4,
-				failParent: 0,
+                parentCount: 7,
+				passParent: 6,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -382,7 +627,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Verify that page subtitle is equals to Dashboard":6.696,"Verify that page subtitle is equals to All Manage Dashboards":6.367,"Verify that page subtitle is equals to All Cars":6.605,"Verify that page subtitle is equals to All Accounts":6.763
+			        "Verify that page subtitle is equals to Dashboard":7.355,"Verify that page subtitle is equals to All Manage Dashboards":5.776,"Verify that page subtitle is equals to All Cars":5.454,"Verify that page subtitle is equals to All Accounts":5.252,"Verify that page subtitle is equals to All Calls":14.206,"Verify that page subtitle is equals to All Calendar Events":5.063,"Verify that page subtitle is equals to Open Opportunities":5.955
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
